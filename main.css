@@ -14,14 +14,25 @@
     background-color: aliceblue;     
 }
 
-/*HEADER*/
+#menu{
+    background-color: burlywood;
+    font-family: 'Josefin Slab', serif;
+}
+
+#menu li{
+    font-weight: 800;
+    color: black;
+    font-size: 20px;
+}
+
+/*HEADER*
 .body .header{
     display: grid;
     grid-template-areas: "logo   nav-bar   nav-bar";
     height: 100px;
     font-family: 'Josefin Slab', serif;
 }
-/*HEADER-LOGO*/
+/*HEADER-LOGO*
 .body .header .logo{
     background-color: burlywood;
     grid-area: logo;
@@ -37,7 +48,7 @@
     
 }
 
-/*HEADER-NAV-BAR*/
+/*HEADER-NAV-BAR*
 .body .header .nav-bar{
     background-color: burlywood;
     grid-area: nav-bar;
@@ -79,6 +90,8 @@
     display: grid;
 }
 
+
+
 .body .main .content .info-content .titulo{
     display: flex;
     align-items: center;
@@ -94,7 +107,7 @@
     font-size: 19px;
 }
 
-.body .main .content .img{
+/*.body .main .content .img{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -114,20 +127,11 @@
     object-fit: cover;
     margin-bottom: 10px;
 }
-
-.body .main .content .boton{
+/*
+.btn{
     text-align: center;
-    margin: auto;
-    margin-top: 15px;
-    margin-bottom: 20px;
 }
-
-.body .main .content .boton .btn{
-        border-radius: 15px;
-        border: solid black 1px;
-        padding: 0px 15px;
-}
-
+*/
 .body .main .content .info-content .maps{
     display: flex;
     width: 400px;
@@ -146,7 +150,7 @@ body .main .content .info-content-dos{
                          ".      jue    vie         ."
                          ".      sab    dom         .";
     margin: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     justify-content: center;
 }
 
@@ -156,6 +160,7 @@ body .main .content .info-content-dos{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: 700;
 }
 
 .body .main .content .info-content-dos .jue{
@@ -245,7 +250,28 @@ body .main .content .info-content-dos{
 
 /*END-MAIN*/
 
-/*FOOTER*/
+
+
+footer{
+	background-color: burlywood;
+	height: 100%;
+    padding: 15px;
+}
+
+footer .text{
+    color: black;
+}
+/*
+.main1 { 
+  display:flex;
+  margin:0 auto;
+}
+
+a img:hover {
+    color: #fff;
+}
+
+/*FOOTER*
 .body .footer{
     background-color: burlywood;
     height: 12vh;
@@ -258,7 +284,7 @@ body .main .content .info-content-dos{
 }
 
 
-/*END-FOOTER*/
+/*END-FOOTER*
 
 @media screen and (min-width:700px){
     .body .header .nav-bar{
@@ -269,7 +295,7 @@ body .main .content .info-content-dos{
         margin-top: 57px;
     }
 }
-
+*/
 @media screen and (min-width:800px){
     .body .main .content .info-content-tres form button:hover,
     .body .main .content .info-content-tres form button:focus{
@@ -296,7 +322,7 @@ body .main .content .info-content-dos{
     }
 
 }
-
+/*
 @media screen and (min-width:950px){
     .body .main{
         grid-template-areas: "vacio vacio vacio"
