@@ -67,46 +67,52 @@
 /*END-HEADER*/
 
 /*MAIN*/
-.body .main{
-    background-image:linear-gradient(rgba(16, 16, 16, 0.264), rgba(16, 16, 16, 0.461)), url(img/restaurante1.jpg) ;
+.body .main .vacio{
+    background-image:linear-gradient(rgba(16, 16, 16, 0.264), rgba(16, 16, 16, 0.461)), url(img/fondo-grande.jpg) ;
     background-size: cover;
     max-width: 100%;
     background-position: center center;
     display: grid;
-
-}
-.body .main .vacio{
     height: 400px;
 }
+
 .body .main .content{
-    background-color: rgb(234, 221, 227);
+    background-color: antiquewhite;
     display: grid;
     font-family: 'Oswald', sans-serif;
     min-height: 500px;
     
 }
 
-.body .main .content .info-content{
+.info-content{
     display: grid;
 }
+.main{
+    background-color: antiquewhite;
+}
 
-
-
-.body .main .content .info-content .titulo{
+.titulo{
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: 'Josefin Slab', serif;
     font-weight: 900;
     min-height: 40px;
+    margin-top: 10px;
 }
-.body .main .content .info-content .parrafo{
+.parrafo{
     display: flex;
     align-items: center;
     text-align: center;
     font-size: 19px;
 }
-
+.img-tres{
+    max-width: 450px;
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 /*.body .main .content .img{
     display: flex;
     justify-content: center;
@@ -132,6 +138,9 @@
     text-align: center;
 }
 */
+.info-content{
+    background-color: antiquewhite;
+}
 .body .main .content .info-content .maps{
     display: flex;
     width: 400px;
@@ -142,6 +151,9 @@
     display: flex;
     margin: auto;
     margin-bottom: 10px;
+    clor: rgb(148, 41, 41);
+    text-decoration: none;
+    color: black;
 }
 
 body .main .content .info-content-dos{
@@ -150,7 +162,7 @@ body .main .content .info-content-dos{
                          ".      jue    vie         ."
                          ".      sab    dom         .";
     margin: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
     justify-content: center;
 }
 
@@ -171,6 +183,8 @@ body .main .content .info-content-dos{
     border: solid 1px black;
     min-width: 200px;
     border-top-left-radius: 10px;
+    text-decoration: none;
+    color: black;
 }
 .body .main .content .info-content-dos .vie{
     grid-area: vie;
@@ -180,6 +194,8 @@ body .main .content .info-content-dos{
     border: solid 1px black;
     min-width: 200px;
     border-top-right-radius: 10px;
+    text-decoration: none;
+    color: black;
 }
 .body .main .content .info-content-dos .sab{
     grid-area: sab;
@@ -189,6 +205,8 @@ body .main .content .info-content-dos{
     border: solid 1px black;
     min-width: 200px;
     border-bottom-left-radius: 10px;
+    text-decoration: none;
+    color:black ;
 }
 .body .main .content .info-content-dos .dom{
     grid-area: dom;
@@ -198,6 +216,8 @@ body .main .content .info-content-dos{
     border: solid 1px black;
     min-width: 200px;
     border-bottom-right-radius: 10px;
+    text-decoration: none;
+    color: black;
 }
 
 .body .main .content .info-content-tres{
@@ -320,11 +340,16 @@ a img:hover {
         background-color: burlywood;
         transition: .3s;
     }
-
+    .body .main .vacio{
+        height: 600px;
+    }
 }
-/*
+
 @media screen and (min-width:950px){
-    .body .main{
+    .body .main .vacio{
+    height: 700px;
+    }
+    /*.body .main{
         grid-template-areas: "vacio vacio vacio"
                              ". content .";
     }
@@ -338,5 +363,5 @@ a img:hover {
         margin-right: 10%;
         margin-bottom: 170px;
         grid-area: content;
-    }
+    }*/
 }
